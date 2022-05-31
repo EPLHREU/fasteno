@@ -8,7 +8,9 @@ NUMBERS = {}
 NUMBER_KEY = None
 ORTHOGRAPHY_RULES = []
 ORTHOGRAPHY_WORDLIST = None
+FERAL_NUMBER_KEY = False
 ORTHOGRAPHY_RULES_ALIASES = {}
+UNDO_STROKE_STENO = ";-"
 
 KEYMAPS = {
  'Keyboard': {
@@ -39,6 +41,6 @@ KEYMAPS = {
 	'-O'         : 'o',
         'arpeggiate': 'space',
         # Suppress adjacent keys to prevent miss-strokes.
-        'no-op'     : 'space'
+        'no-op'     : ''
     }
 }
