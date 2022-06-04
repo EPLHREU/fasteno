@@ -1,44 +1,46 @@
 from plover.system.english_stenotype import *
 
-KEYS = ('C-', 'B-', 'L-', 'F-', 'S-', 'N-', 'T-', 'H-', 'M-', 'G-',
-        'I', 'E', 'O',
-        '-Z', '-T', '-N', '-A', '-S', '-@', '-F', '-R', '-D', '-$')
+KEYS = (';-', 'V-', 'Q-', 'C-', 'F-', 'H-', 'S-', 'D-', 'J-', 'T-', 'P-', 'B-', 'X-', 'N-', '$-', 'L-', 'G-', 'R-', 'Z-', 'M-', 'K-', '-A', '-E', '-I', '-O')
 
-IMPLICIT_HYPHEN_KEYS = ('I', 'E', 'O')
+IMPLICIT_HYPHEN_KEYS = ()
 SUFFIX_KEYS = ()
 NUMBERS = {}
 NUMBER_KEY = None
 ORTHOGRAPHY_RULES = []
 ORTHOGRAPHY_WORDLIST = None
+FERAL_NUMBER_KEY = False
 ORTHOGRAPHY_RULES_ALIASES = {}
+UNDO_STROKE_STENO = ";-"
 
 KEYMAPS = {
  'Keyboard': {
-        'C-'        : 'q',
-        'B-'        : 'a',
-        'L-'        : 'w',
-        'F-'        : 's',
-        'S-'        : 'e',
-        'N-'        : 'd',
-        'T-'        : 'r',
-        'H-'        : 'f',
-        'M-'        : 't',
-        'G-'        : 'g',
-        'I'         : 'v',
-        'E'         : 'b',
-        'O'         : 'n',
-        '-Z'        : 'y',
-        '-T'        : 'h',
-        '-N'        : 'u',
-        '-A'        : 'j',
-        '-S'        : 'i',
-        '-@'        : 'k',
-        '-F'        : 'o',
-        '-R'        : 'l',
-        '-D'        : 'p',
-        '-$'        : ';',
+        ';-'         : 'u',
+        'V-'         : 'v',
+        'Q-'         : 'q',
+        'C-'         : 'c',
+        'F-'         : 'f',
+        'H-'         : 'h',
+	'S-'         : 's',
+        'D-'         : 'd',
+	'J-'         : 'j',
+	'T-'         : 't',
+	'P-'         : 'p',
+	'B-'         : 'b',
+	'X-'         : 'x',
+	'N-'         : 'n',
+	'$-'         : '4',
+	'L-'         : 'l',
+	'G-'         : 'g',
+	'R-'         : 'r',
+	'Z-'         : 'z',
+	'M-'         : 'm',
+	'K-'         : 'k',
+	'-A'         : 'a',
+	'-E'         : 'e',
+	'-I'         : 'i',
+	'-O'         : 'o',
         'arpeggiate': 'space',
         # Suppress adjacent keys to prevent miss-strokes.
-        'no-op'     : ('z', 'x', 'c', 'm', ',', '.')
+        'no-op'     : ''
     }
 }
